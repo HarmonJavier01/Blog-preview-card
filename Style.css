@@ -1,0 +1,137 @@
+/* Stylesheet in SASS to be compiled into CSS */
+
+
+/* Font from file */
+
+@font-face {
+    font-family: "Figtree";
+    src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+
+/* Variables */
+
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    color: hsl(0, 0%, 7%);
+}
+
+body .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+}
+
+body .main .card {
+    min-height: 500px;
+    max-width: 327px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 24px;
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: 20px;
+    box-shadow: 8px 8px hsl(0, 0%, 7%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    body .main .card {
+        max-width: 384px;
+    }
+}
+
+body .main .card .card_image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+body .main .card .card_content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+body .main .card .card_content .blog_category {
+    font-size: clamp(12px, 1rem, 14px);
+    font-weight: 800;
+    padding: 4px 12px;
+    max-width: fit-content;
+    border-radius: 4px;
+    background-color: hsl(47, 88%, 63%);
+}
+
+body .main .card .card_content .blog_published {
+    font-size: clamp(12px, 1rem, 14px);
+}
+
+body .main .card .card_content .blog_heading {
+    font-size: clamp(20px, 1rem, 24px);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+body .main .card .card_content .blog_description {
+    font-size: clamp(14px, 1rem, 16px);
+    color: hsl(0, 0%, 50%);
+}
+
+body .main .card .card_author {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+body .main .card .card_author .card_author_image {
+    height: 32px;
+    width: 32px;
+}
+
+body .main .card .card_author .author_name {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+body .main .card:hover {
+    box-shadow: 16px 16px hsl(0, 0%, 7%);
+}
+
+body .main .card:hover .card_content .blog_heading {
+    color: hsl(47, 88%, 63%);
+}
+
+body .footer {
+    background-color: hsl(0, 0%, 7%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+body .footer a {
+    color: hsl(47, 88%, 63%);
+    text-decoration: none;
+}
+
+body .footer a:hover {
+    color: hsl(0, 0%, 50%);
+}
+
+
+/*# sourceMappingURL=styles.css.map */
